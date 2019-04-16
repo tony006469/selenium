@@ -91,16 +91,6 @@ if args.browser=='Firefox':
     driver.get('https://gmod-stage.nal.usda.gov/register/project-dataset/account')
     specify_browser()
 
-#if args.browser=='IE':
-    #driver = webdriver.Ie()
-    #driver.get('https://i5k.nal.usda.gov/contact')
-    #specify_browser()
-    #Speed up for 64 bit IEWebDriver:
-    #Open IE
-    #Go to Internet Options → Advanced → Security
-    #Check ☑ Enable 64-bit processes for Enhanced Protected Mode
-    #Click Apply and OK
-
 #if args.url:
     #driver.get(args.url)
 

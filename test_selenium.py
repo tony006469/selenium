@@ -50,16 +50,16 @@ def specify_browser():
     #print (success_message)
     print ("Done")
 
-    navigationStart = driver.execute_script("return window.performance.timing.navigationStart")
-    responseStart = driver.execute_script("return window.performance.timing.responseStart")
-    domComplete = driver.execute_script("return window.performance.timing.domComplete")
+    # navigationStart = driver.execute_script("return window.performance.timing.navigationStart")
+    # responseStart = driver.execute_script("return window.performance.timing.responseStart")
+    # domComplete = driver.execute_script("return window.performance.timing.domComplete")
 
-    backendPerformance = responseStart - navigationStart
-    frontendPerformance = domComplete - responseStart
+    # backendPerformance = responseStart - navigationStart
+    # frontendPerformance = domComplete - responseStart
     
-    print (time.process_time())
-    print ("Back End: %s" % backendPerformance)
-    print ("Front End: %s" % frontendPerformance)
+    # print (time.process_time())
+    # print ("Back End: %s" % backendPerformance)
+    # print ("Front End: %s" % frontendPerformance)
     time.sleep(10) # Let the user actually see something!
     driver.quit()
 

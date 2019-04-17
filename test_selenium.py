@@ -17,7 +17,8 @@ class ContactTestCase(unittest.TestCase):
         self.driver = webdriver.Chrome(chrome_options=chrome_options)
         self.driver.get('https://gmod-stage.nal.usda.gov/register/project-dataset/account')
 
-    def specify_browser(self):
+    #namespace must be test....
+    def test_contact(self):
         driver=self.driver
         name_element = driver.find_element_by_name("name")
         name_element.send_keys("Test_Robot")

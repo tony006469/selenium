@@ -1,10 +1,11 @@
 from selenium import webdriver
 import time
 import argparse
-from pyvirtualdisplay import Display
-# Add following 2 line before start the Chrome
-display = Display(visible=0, size=(800, 800))  
-display.start()
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.chrome.options import Options
+chrome_options = Options()
+chrome_options.add_argument("--headless")
+driver = webdriver.Chrome(chrome_options=chrome_options)
 #Chrome version 73.0.3683.86, ChromeDriver 73.0.3683.68
 #Firefox version:58, Driver version:geckodriver24.0 
 #IE version:11, IEDriverServer_x64_3.14.0
@@ -85,7 +86,7 @@ args = parser.parse_args()
 
 
 if args.browser=='Chrome':
-    driver = webdriver.Chrome()
+    #driver = webdriver.Chrome()
     specify_browser()
     #Check_mail()
 

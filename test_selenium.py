@@ -4,7 +4,6 @@ import time
 import unittest
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.chrome.options import Options
-import HtmlTestRunner
 
 #Chrome version 73.0.3683.86, ChromeDriver 73.0.3683.68
 #Firefox version:58, Driver version:geckodriver24.0 
@@ -73,7 +72,7 @@ class ContactTestCase(unittest.TestCase):
     
 
 if __name__ == '__main__':
-    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner())
+    unittest.main()
 
 # def Check_mail():
 #     driver.get("http://www.gmail.com")

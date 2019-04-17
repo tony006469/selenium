@@ -1,15 +1,16 @@
 import unittest
 from selenium import webdriver
 import time
-import argparse
+import unittest
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.chrome.options import Options
-import HTMLTestRunner
+import HtmlTestRunner
 
 #Chrome version 73.0.3683.86, ChromeDriver 73.0.3683.68
 #Firefox version:58, Driver version:geckodriver24.0 
 #IE version:11, IEDriverServer_x64_3.14.0
 #Driver should put in the path of python36
+
 class ContactTestCase(unittest.TestCase):
     def setUp(self):
         chrome_options = Options()
@@ -66,14 +67,13 @@ class ContactTestCase(unittest.TestCase):
         # print (time.process_time())
         # print ("Back End: %s" % backendPerformance)
         # print ("Front End: %s" % frontendPerformance)
-        time.sleep(10) # Let the user actually see something!
-    
+        #time.sleep(10) # Let the user actually see something!
     def tearDown(self):
         self.driver.quit()
     
 
 if __name__ == '__main__':
-    HTMLTestRunner.main()
+    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner())
 
 # def Check_mail():
 #     driver.get("http://www.gmail.com")

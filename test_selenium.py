@@ -22,15 +22,19 @@ class ContactTestCase(unittest.TestCase):
         driver=self.driver
         name_element = driver.find_element_by_name("name")
         name_element.send_keys("Test_Robot")
+        print ('name_done')
 
         mail_element = driver.find_element_by_xpath("//*[@id='edit-email']")
         mail_element.send_keys("monica.poelchau@ars.usda.gov")
+        print ('email_done')
 
         subject_element = driver.find_element_by_name("affiliation")
         subject_element.send_keys("Test_Robot")
+        print ('Affiliation_done')
 
         message_element = driver.find_element_by_name("content")
         message_element.send_keys("Automated Testing")
+        print ('Contact_done')
 
         #Math question
         text=driver.find_element_by_xpath("//*[@id='project-dataset-submission-account']/div/div[6]/div").text
@@ -42,11 +46,12 @@ class ContactTestCase(unittest.TestCase):
                 number.append(n)
 
         answer=int(number[0])+int(number[1])
-        print (answer)
+        #print (answer)
 
         answer_field = driver.find_element_by_name("captcha_response")
         answer_field.send_keys(answer)
-
+        
+        print ('Math_done')
         #click button
         #submit_button = driver.find_element_by_xpath("//*[@id='edit-submit']")
         #submit_button.click()
@@ -55,7 +60,7 @@ class ContactTestCase(unittest.TestCase):
         #success_message=driver.find_element_by_xpath("/html/body/div[2]/div/section/div[2]").text
 
         #print (success_message)
-        print ("Done")
+        print ("All_Done")
 
         # navigationStart = driver.execute_script("return window.performance.timing.navigationStart")
         # responseStart = driver.execute_script("return window.performance.timing.responseStart")

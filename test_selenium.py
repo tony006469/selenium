@@ -1,7 +1,10 @@
 from selenium import webdriver
 import time
 import argparse
-
+from pyvirtualdisplay import Display
+# Add following 2 line before start the Chrome
+display = Display(visible=0, size=(800, 800))  
+display.start()
 #Chrome version 73.0.3683.86, ChromeDriver 73.0.3683.68
 #Firefox version:58, Driver version:geckodriver24.0 
 #IE version:11, IEDriverServer_x64_3.14.0

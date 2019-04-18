@@ -3,7 +3,7 @@ Library  SeleniumLibrary
 
 *** Test Cases ***
 Open browser and run 
-    Open Browser https://gmod-stage.nal.usda.gov/register/project-dataset/account chrome
+    Open Browser https://gmod-stage.nal.usda.gov/register/project-dataset/account headlesschrome
     Input Text name=name Test_Robot
     Input Text xpath=//*[@id='edit-email'] monica.poelchau@ars.usda.gov
     Input Text name=affiliation Test_Robot

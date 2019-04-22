@@ -10,7 +10,7 @@ Registration Testing
     Wait and Input  name=content  Automated Testing
     [Teardown]    Close All Browsers
 
-Registration Testing
+Contact Testing
     Open Browser  https://gmod-stage.nal.usda.gov/contact  headlesschrome
     Wait and Input  name=name  Test_Robot
     Wait and Input  xpath=//*[@id='edit-mail']  monica.poelchau@ars.usda.gov

@@ -111,9 +111,9 @@ class ContactTestCase(unittest.TestCase):
         #click button
         submit_button = driver.find_element_by_xpath("//*[@id='edit-submit']")
         submit_button.click()
-
+        
         #success message i5k:contact:"/html/body/div[2]/div/section/div[2]"
-        success_message=driver.find_element_by_xpath("/html/body/div[2]/div/div/div[1]").text
+        success_message=driver.find_element_by_xpath("/html/body/div[2]/div/section/div[3]").text
         print (success_message)
 
     def tearDown(self):

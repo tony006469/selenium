@@ -59,7 +59,7 @@ class RegisterTestCase(unittest.TestCase):
 
         #Get error message
         success_message=driver.find_element_by_xpath("/html/body/div[2]/div/div/div[1]").text
-        print (success_message)
+        print (str(success_message))
 
     def tearDown(self):
         self.driver.quit()
@@ -110,12 +110,12 @@ class ContactTestCase(unittest.TestCase):
         print ('Math_done')
 
         #click button
-        submit_button = driver.find_element_by_xpath("//*[@id='edit-submit']")
-        submit_button.click()
+        #submit_button = driver.find_element_by_xpath("//*[@id='edit-submit']")
+        #submit_button.click()
         
         #success message i5k:contact:"/html/body/div[2]/div/section/div[2]"
-        success_message=driver.find_element_by_xpath("/html/body/div[2]/div/section/div[3]").text
-        print (success_message)
+        #success_message=driver.find_element_by_xpath("/html/body/div[2]/div/section/div[3]").text
+        #print (str(success_message))
 
     def tearDown(self):
         self.driver.quit()

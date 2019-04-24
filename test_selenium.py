@@ -59,7 +59,7 @@ class RegisterTestCase(unittest.TestCase):
 
         #Get error message
         success_message=driver.find_element_by_xpath("/html/body/div[2]/div/div/div[1]").text
-        print (str(success_message))
+        print (success_message.encode('utf-8'))
 
     def tearDown(self):
         self.driver.quit()
